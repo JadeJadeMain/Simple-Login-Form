@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./assets/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    background-color: rgba(5, 57, 61, 0.5);
+    backdrop-filter: blur (75px);
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(240, 190, 64, 0.9);
+}
+
+.title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: verdana;
+    text-align: center;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    display: flex;
+    width: 100%;
+    gap: 10px; 
+}
+
+.form label{
+    position: relative;
+    text-align: center;
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    background-color: rgba(109, 216, 224, 0.9) ;
+    color: black;
+    font-size: 15px;
+}
+
+.form label input+span{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    cursor: text;
+    transition:  0.3s ease;
+}
+
+.form label input:placeholder-shown+span{
+    top: 10px;
+    font-size: 15px;
+    
+}
+
+.form label input:focus+span,
+.form label input:valid+span{
+    top: -15px;
+    font-size: 0.9rem;
+   
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: verdana;
+    transform: 0.3s ease;
+    transition: 0.5s ease;
+    background-color: rgba(205, 197, 197, 0.5);
+
+
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.sign{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    padding: 4px;
+    
+}
+
+.sign>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: cyan;
+    transition: all .3s ease;
+}
+
+.sign>a:hover{
+    text-decoration: underline blue;
+}
